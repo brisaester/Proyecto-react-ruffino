@@ -1,4 +1,4 @@
-
+ 
 /* Estilo para las imágenes dentro del contenedor con texto */
 .image-with-text {
   text-align: center;
@@ -23,7 +23,6 @@
   border: 1px solid #ccc; 
   box-sizing: border-box;  
 }
-
 .card-body {
   padding: 15px; 
   box-sizing: border-box; 

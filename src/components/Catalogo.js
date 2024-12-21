@@ -1,6 +1,4 @@
 
-
-
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
@@ -21,7 +19,6 @@ const Catalogo = () => {
       const productosFiltrados = productosDisponibles.filter(
         producto => producto.id === parseInt(id) || !id
       );
-
       setProductos(productosFiltrados);
     };
 
@@ -51,4 +48,4 @@ const Catalogo = () => {
   );
 };
 
-export default Catalogo;
+export default Catalogo ;

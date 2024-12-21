@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +9,6 @@ import ImageWithText from './components/ImageWithText';
 import cortana from './img/cortana.png';
 import alexa from './img/alexa.png';
 import siri from './img/siri.png';
-
 function App() {
   return (
     <Router>
@@ -24,9 +22,6 @@ function App() {
         <Route path="/item/:id" element={<DetalleProducto />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-
-     
-     
       <div>
         <ImageWithText src={cortana} alt="Cortana" />
         <ImageWithText src={alexa} alt="Alexa" />

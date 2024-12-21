@@ -2,7 +2,6 @@
 import {useState} from "react";
 
 function ProfileCard({ titulo , handle , url}){
-   
     return (
         <div>
             <img src={url} alt="logo"/>
@@ -11,4 +10,4 @@ function ProfileCard({ titulo , handle , url}){
         </div>
     )
 }
-export default ProfileCard;
+export default ProfileCard; 

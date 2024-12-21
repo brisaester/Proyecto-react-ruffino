@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+
 const ImageWithText = ({ src, alt, text }) => {
   return (
     <div className="image-with-text">
@@ -12,5 +13,3 @@ const ImageWithText = ({ src, alt, text }) => {
 }
 
 export default ImageWithText;
-
-
