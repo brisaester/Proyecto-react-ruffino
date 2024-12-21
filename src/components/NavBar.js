@@ -1,27 +1,33 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap (opcional)
-import { FaHome } from 'react-icons/fa'; // Asegúrate de importar FaHome desde react-icons
-import '../App.css'; // Importa el archivo CSS desde la carpeta src
+import { Link } from 'react-router-dom';
+import { FaHome, FaShoppingCart } from 'react-icons/fa'; 
+import '../App.css'; 
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand custom-brand" href="#">
+      <Link className="navbar-brand custom-brand" to="/">
         <FaHome /> RUFFINO Cat Lovers
-      </a>
+      </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-end custom-nav" id="navbarNav">
         <ul className="navbar-nav">
+          {/* Enlaces de navegación */}
           <li className="nav-item">
-            <a className="nav-link" href="#">Inicio</a>
+            <Link className="nav-link" to="/inicio">Inicio</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Nuevos ingresos</a>
+            <Link className="nav-link" to="/category/1">productos </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Nosotros</a>
+            <Link className="nav-link" to="/category/2">ofertas</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/cart">
+              <FaShoppingCart /> Carrito
+            </Link>
           </li>
         </ul>
       </div>
