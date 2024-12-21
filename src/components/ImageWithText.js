@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 
 const ImageWithText = ({ src, alt, text }) => {
@@ -10,4 +12,5 @@ const ImageWithText = ({ src, alt, text }) => {
 }
 
 export default ImageWithText;
+
 

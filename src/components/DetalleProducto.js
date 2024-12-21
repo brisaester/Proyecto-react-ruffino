@@ -29,4 +29,3 @@ const DetalleProducto = () => {
 }
 
 export default DetalleProducto;
-

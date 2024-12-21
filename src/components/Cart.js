@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 
 const Cart = () => {
@@ -10,4 +12,3 @@ const Cart = () => {
 }
 
 export default Cart;
-
