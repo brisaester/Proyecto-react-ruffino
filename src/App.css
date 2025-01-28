@@ -1,4 +1,3 @@
- 
 /* Estilo para las imágenes dentro del contenedor con texto */
 .image-with-text {
   text-align: center;
@@ -6,23 +5,28 @@
 }
 
 .image-with-text img {
-  max-width: 100%; 
-  height: 50px;    
+  width: 60px;        
+  height: 60px;       
+  object-fit: cover;  
+  float: right;       
+  margin-left: 15px; 
 }
 
 .image-with-text p {
   color: white;
   background-color: black;
   padding: 20px;
+  overflow: hidden;  
 }
 
 /* Estilos generales para las tarjetas */
 .card {
   margin-bottom: 20px;  
-  max-width: 100%;      
+  max-width: 100%;    
   border: 1px solid #ccc; 
   box-sizing: border-box;  
 }
+
 .card-body {
   padding: 15px; 
   box-sizing: border-box; 
@@ -30,24 +34,26 @@
 
 /* Estilo de las imágenes en las tarjetas */
 .card-img-top {
-  width: 100%;          
-  height: auto;         
-  object-fit: cover;    
-  max-height: 50px;   
+  width: 60px;       
+  height: 60px;      
+  object-fit: cover; 
+  float: right;      
+  margin-left: 15px; 
 }
-
 
 /* Ajustar el contenedor principal */
 .container {
   max-width: 1400px;  
   margin: 0 auto;     
-  padding: 0 15px;   
+  padding: 0 15px; 
 }
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
   .card-img-top {
-    max-height: 150px; 
+    width: 60px;       
+    height: 60px;
+    float: right;     
   }
 
   .container {

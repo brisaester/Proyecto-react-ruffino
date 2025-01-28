@@ -1,10 +1,12 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaShoppingCart } from 'react-icons/fa'; 
-import '../App.css'; 
+import { useCart } from './CartContext';
+import '../App.css';
 
 const NavBar = () => {
+  const { cart } = useCart(); // Obtiene los productos del carrito
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand custom-brand" to="/">
@@ -15,19 +17,15 @@ const NavBar = () => {
       </button>
       <div className="collapse navbar-collapse justify-content-end custom-nav" id="navbarNav">
         <ul className="navbar-nav">
-          {/* Enlaces de navegación */}
           <li className="nav-item">
             <Link className="nav-link" to="/inicio">Inicio</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/category/1">productos </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/category/2">ofertas</Link>
+            <Link className="nav-link" to="/category/1">Productos</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/cart">
-              <FaShoppingCart /> Carrito
+              <FaShoppingCart /> Carrito {cart.length > 0 && `(${cart.length})`}
             </Link>
           </li>
         </ul>
@@ -37,4 +35,3 @@ const NavBar = () => {
 }
 
 export default NavBar;
- 
